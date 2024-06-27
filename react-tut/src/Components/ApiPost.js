@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 function ApiPost() {
-  const [name, setname] = useState("");
-  const [age, setAge] = useState("");
+  const [Name, setname] = useState("");
+  const [Age, setAge] = useState("");
   const [Status, setStatus] = useState("");
   const [Department, setDepartment] = useState("");
   const [Subject, setSubject] = useState("");
