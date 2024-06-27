@@ -7,8 +7,8 @@ function ApiPost() {
   const [Subject, setSubject] = useState("");
 
   const SubmitData = () => {
-    console.log(name, age, Subject, Department, Status);
-    let Data = ({name,age,Status,Department,Subject})
+    console.log(Name, Age, Subject, Department, Status);
+    let Data = ({Name,Age,Status,Department,Subject})
     fetch("http://localhost:4900/",{
         method:'POST',
         headers:{
@@ -26,7 +26,7 @@ function ApiPost() {
       <input
         type="text"
         name="name"
-        value={name}
+        value={Name}
         onChange={(e) => setname(e.target.value)}
       />
       <br />
@@ -35,7 +35,7 @@ function ApiPost() {
       <input
         type="number"
         name="age"
-        value={age}
+        value={Age}
         onChange={(e) => setAge(e.target.value)}
       />
       <br />
